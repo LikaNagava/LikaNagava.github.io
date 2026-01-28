@@ -1,5 +1,65 @@
-h1 { font-size: 1.7em; }
-h2 { font-size: 1.4em; }
-nav a { display: block; margin: 10px 0; font-size: 1.1em; }
-main { padding: 15px; }
-.sidebarLeft, .sidebarRight { width: 100%; }
+h1 {font-size: 1.9em;}
+h2 {font-size: 1.3em;}
+.res-text h4 {font-size: 1.2em;}
+h3 {
+    font-size: 1em;
+    padding-left: 2px;
+}
+h6 { font-size: 12px;}
+ul{font-size: 0.77em; }
+p {font-size: 0.8em;}
+
+cite {
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 0.7em;
+}
+nav a {
+    font-size: 0.8em;
+    margin: 0 3px;
+}
+.stronger {
+    padding: 0.5em;
+    font-size: 0.8em;
+}
+.footer-text {font-size: 11px;}
+
+.rowColumns {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+}
+
+.sidebarLeft,
+.sidebarRight {
+    width: 100%;
+    max-width: 100%;
+    min-width: auto;
+    justify-content: center;
+}
+
+.sidebarLeft img.g {
+    display: none !important;
+}
+
+.current-moon-block img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    margin: 20px;
+    padding: 25px;
+}
+
+#moonPhaseImg {
+    width: auto;
+    max-width: 78vw;
+    max-height: 78vh;
+    height: auto;
+}
