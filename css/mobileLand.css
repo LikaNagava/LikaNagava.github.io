@@ -1,3 +1,17 @@
-h1 { font-size: 1.2em; }
-nav a { margin: 0 5px; font-size: 0.9em; }
-header { padding: 10px; }
+h1 { font-size: 2.1em; }
+h6 { font-size: 15px;}
+p { font-size: 1em;}
+cite {
+  padding: 20px;
+  margin: 20px 0;
+  font-size: 0.9em;
+}
+.res-text h4 {
+    font-size: 1.2em;
+}
+.stronger {
+    padding: 0.5em;
+    font-size: 1em;
+}
+main {margin: 20px;}
+nav a { font-size: 0.8em; margin: 0 10px;}
