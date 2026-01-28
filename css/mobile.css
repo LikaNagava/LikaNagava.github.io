@@ -1,12 +1,18 @@
 h1 {font-size: 1.9em;}
+
 h2 {font-size: 1.3em;}
+
 .res-text h4 {font-size: 1.2em;}
+
 h3 {
     font-size: 1em;
     padding-left: 2px;
 }
+
 h6 { font-size: 12px;}
+
 ul{font-size: 0.77em; }
+
 p {font-size: 0.8em;}
 
 cite {
@@ -63,3 +69,4 @@ main {
     max-height: 78vh;
     height: auto;
 }
+
