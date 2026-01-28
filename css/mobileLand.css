@@ -1,6 +1,9 @@
-h1 { font-size: 2.1em; }
-h6 { font-size: 15px;}
-p { font-size: 1em;}
+h1 {font-size: 2.1em;}
+
+h6 {font-size: 15px;}
+
+p {font-size: 1em;}
+
 cite {
   padding: 20px;
   margin: 20px 0;
@@ -14,4 +17,6 @@ cite {
     font-size: 1em;
 }
 main {margin: 20px;}
+
 nav a { font-size: 0.8em; margin: 0 10px;}
+
