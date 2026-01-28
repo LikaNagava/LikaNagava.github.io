@@ -17,3 +17,10 @@ td {
 nav a {
   font-size: 1.2em;
 }
+
+#moonPhaseImg {
+    width: auto;
+    max-width: 45vw;
+    max-height: 45vh;
+    height: auto;
+}
