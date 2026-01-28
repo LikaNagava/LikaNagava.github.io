@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Знаки зодиака" />
+  <meta name="keywords" content="луна, календарь, знаки, знаки зодиака, узнать" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0 user-scalable=yes">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 600px) and (orientation: portrait)" />
+  <link rel="stylesheet" href="../css/mobileLand.css"
+    media="screen and (max-width: 600px) and (orientation: landscape)" />
+  <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 601px) and (max-width: 900px) " />
+  <link rel="stylesheet" href="../css/laptop.css" media="screen and (min-width: 901px) and (max-width: 1300px)" />
+  <link rel="stylesheet" href="../css/large.css" media="screen and (min-width: 1500px)" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <title>Знаки зодиака</title>
+</head>
+
+<body>
+  <header id="header">
+    <h1>Знаки зодиака</h1>
+    <nav role="navigation">
+      <a href="../index.html">В начало</a>
+      <a href="../pages/page1.html">Луна</a>
+      <a href="../pages/page2.html">Лунные Фазы</a>
+      <a href="../pages/page3.html">Знак зодиака</a>
+      <button id="theme-toggle" class="theme-btn">
+        <img id="theme-icon" src="../media/полнолуние.png" alt="Сменить тему">
+      </button>
+    </nav>
+  </header>
+  <div class="container">
+    <main>
+      <h2>Знаки зодиака</h2>
+      <div class="zodiac-info">
+        <p>
+          Знаки зодиака — участки зодиакального пояса, которым
+          астрология приписывает определённые метафизические
+          свойства и использует при анализе гороскопов.
+        </p>
+        <div class="search-wrapper">
+          <div class="search-box">
+            <input type="text" id="zodiacSearch" list="zodiacOptions" placeholder="Узнать о знаках зодиака больше...">
+            <span class="search-icon" id="clearSearch" style="cursor: pointer;">✖️</span>
+            <datalist id="zodiacOptions"></datalist>
+          </div>
+        </div>
+        <p>
+          В астрологии считается, что положение Солнца, Луны,
+          планет и других небесных объектов в знаках зодиака
+          коррелирует с событиями на земле. Также астрологи
+          считают, что судьба и характер человека отражается в его
+          астрологической карте.
+        </p>
+      </div>
+
+      <div class="btn-container">
+        <button class="zodiac-btn" onclick="showZodiacForm()">
+          <h2>Узнать мой знак зодиака</h2>
+        </button>
+      </div>
+
+      <div id="inputForm" class="zodiac-form-overlay" style="display: none;">
+        <div class="zodiac-form">
+          <h3>Введите ваши данные</h3>
+          <input type="text" id="userName" placeholder="Ваше имя">
+          <input type="date" id="userBirthDate">
+          <input type="time" id="userBirthTime">
+          <p style="font-size: 0.8em; color: #666;">* Время рождения (необязательно)</p>
+          <div class="form-buttons">
+            <button onclick="processZodiac()">Рассчитать</button>
+            <button onclick="closeForm()">Отмена</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="zodiacResult" class="zodiac-card" style="display: none;">
+        <img id="resImg" src="" alt="Знак зодиака">
+        <div class="res-text">
+          <h4 id="resName"></h4>
+          <p id="resSignRow">
+          <div class="stronger">Знак зодиака: <span id="resSign"></span></div>
+          </p>
+          <p>
+          <div class="stronger">Характеристика: <span id="resDesc"></span></div>
+          </p>
+          <p id="resTimeInfo" style="font-size: 0.9em; color: #555;"></p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-text">
+      Контактная информация: moon@inbox.ru |
+      <a href="#"><img src="../media/tg.png" alt="Telegram"></a>
+      <a href="#"><img src="../media/vk.png" alt="VK"></a>
+    </div>
+    <p class="footer-text">&copy; 2025 Лунный календарь</p>
+  </footer>
+  <script src="../class/zodiacSigns.js"></script>
+  <script src="../class/zodiacSun.js"></script>
+  <script src="../class/zodiacMoon.js"></script>
+  <script src="../js/zodiac.js"></script>
+  <script src="../js/theme.js"></script>
+</body>
+
+</html>

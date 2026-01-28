@@ -1,0 +1,5 @@
+h1 { font-size: 1.7em; }
+h2 { font-size: 1.4em; }
+nav a { display: block; margin: 10px 0; font-size: 1.1em; }
+main { padding: 15px; }
+.sidebarLeft, .sidebarRight { width: 100%; }

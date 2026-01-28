@@ -1,0 +1,19 @@
+main {max-width: 1300px; padding: 60px;}
+h1 { font-size: 3.0em; }
+h2 { font-size: 2.5em; padding-left: 25px; }
+h3 { font-size: 25px; letter-spacing: 2.3px; }
+h4,h5 { font-size: 23px;}
+h6{ font-size: 1.3em;}
+p{font-size: 1.2em;}
+th,
+td {
+  padding: 20px;
+  font-size: 1.2em;
+}
+.g {
+  max-height: 2.0em;
+  width: 100%;
+}
+nav a {
+  font-size: 1.2em;
+}

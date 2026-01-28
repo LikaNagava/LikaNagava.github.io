@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Лунные фазы</title>
+  <meta name="description" content="Информация о лунных фазах" />
+  <meta name="keywords" content="фаза, луна, лунные фазы, новолуние" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0 user-scalable=yes">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 600px) and (orientation: portrait)" />
+  <link rel="stylesheet" href="../css/mobileLand.css"
+    media="screen and (max-width: 600px) and (orientation: landscape)" />
+  <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 601px) and (max-width: 900px) " />
+  <link rel="stylesheet" href="../css/laptop.css" media="screen and (min-width: 901px) and (max-width: 1300px)" />
+  <link rel="stylesheet" href="../css/large.css" media="screen and (min-width: 1500px)" />
+  <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+  <header accesskey="h" tabindex="1" contextmenu="header-menu" id="header">
+    <h1>Лунный календарь</h1>
+    <nav role="navigation">
+      <a href="../index.html">В начало</a>
+      <a href="../pages/page1.html">Луна</a>
+      <a href="../pages/page2.html">Лунные Фазы</a>
+      <a href="../pages/page3.html">Знак зодиака</a>
+      <button id="theme-toggle" class="theme-btn">
+        <img id="theme-icon" src="../media/полнолуние.png" alt="Сменить тему">
+      </button>
+    </nav>
+  </header>
+  <div class="container">
+    <main tabindex="5">
+      <section aria-label="Цитата">
+        <cite hidden>
+          О сколько нам открытий чудных<br />
+          Готовят просвещенья дух<br />
+          И опыт, сын ошибок трудных,<br />
+          И гений, парадоксов друг,<br />
+          И случай, бог изобретатель.<br /><br />
+          А.С. Пушкин
+        </cite>
+      </section>
+
+      <article aria-label="Статья о лунных фазах">
+        <h2>Лунные фазы</h2>
+
+        <p>
+          Фазы Луны — это постепенное изменение видимой освещённой части Луны,
+          связанное с её положением относительно Земли и Солнца. Сама Луна не
+          светится, а отражает солнечные лучи, но видимая часть освещённой
+          поверхности меняется.
+        </p>
+
+        <p>
+          Смена фаз обусловлена орбитальным движением Луны вокруг Земли. Луна
+          вращается по эллиптической орбите, и Солнце освещает разные стороны
+          спутника по очереди.
+        </p>
+
+        <p>
+          Полный цикл от одного новолуния до следующего занимает примерно 29,5
+          дней (синодический месяц).
+        </p>
+
+        <h2>Описание фаз</h2>
+
+        <p>
+          Ежемесячно Луна проходит восемь фаз. Из них четыре —
+          основные(новолуние, первая четверть, полнолуние и последняя
+          четверть). Дополнительные фазы: растущий серп, растущая Луна,
+          убывающий серп, убывающая Луна.
+        </p>
+
+        <section class="moon-finder">
+          <h2>Узнать ближайшие даты фаз</h2>
+          <div class="finder-controls">
+            <select id="phaseSelect" class ="styled-select">
+              <option value="">Выбери фазу из списка...</option>
+              <option value="Новолуние">Новолуние</option>
+              <option value="Растущий серп">Растущий серп</option>
+              <option value="Первая четверть">Первая четверть</option>
+              <option value="Растущая луна">Растущая луна</option>
+              <option value="Полнолуние">Полнолуние</option>
+              <option value="Убывающая луна">Убывающая луна</option>
+              <option value="Последняя четверть">Последняя четверть</option>
+              <option value="Убывающий серп">Убывающий серп</option>
+            </select>
+          </div>
+
+          <div id="phaseResults" class = "phase-resuls-container">
+
+          </div>
+        </section>
+
+        <div class="tableContainer">
+          <table summary="Таблица с информацией о фазах луны">
+            <caption>
+              Список фаз
+            </caption>
+
+            <colgroup>
+              <col class="name" scope="col" />
+              <col class="degphoto" scope="col" />
+              <col class="dur" scope="col" />
+            </colgroup>
+
+            <thead>
+              <tr>
+                <th scope="col" id="name">
+                  <h5>Название</h5>
+                </th>
+                <th scope="col" id="degphoto">
+                  <h5>Фото</h5>
+                </th>
+                <th scope="col" id="dur">
+                  <h5>Описание</h5>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th headers="name" scope="row">Новолуние</th>
+                <td headers="degphoto">
+                  <img src="../media/новолуние.png" alt="Новолуние" height="120" width="120" />
+                </td>
+                <td headers="dur">
+                  Луна находится между Землёй и Солнцем, её освещённая сторона
+                  не видна с Земли. Начало нового лунного цикла.
+                </td>
+              </tr>
+
+              <tr>
+                <th headers="name" scope="row">Растущий серп</th>
+                <td headers="degphoto">
+                  <img src="../media/растущая_справа.png" alt="Растущая_справа" height="120" width="120" />
+                </td>
+                <td headers="dur">
+                  Луна постепенно становится видимой, увеличивается освещённая
+                  часть справа (в северном полушарии).
+                </td>
+              </tr>
+
+              <tr>
+                <th headers="name" scope="row">Первая четверть</th>
+                <td headers="degphoto">
+                  <img src="../media/первая четверть.png" alt="первая" height="120" width="120" />
+                </td>
+                <td headers="dur">
+                  Половина Луны освещена (правая половина в северном полушарии).
+                  В эту фазу Луна проходит четверть пути вокруг Земли, что
+                  случается ориентировочно через 7,4 дня после новолуния.
+                </td>
+              </tr>
+
+              <tr>
+                <th headers="name" scope="row">Растущая Луна</th>
+                <td headers="degphoto">
+                  <img src="../media/растущаю_слева.png" alt="Прибывающая_слева" height="120" width="120" />
+                </td>
+                <td headers="dur">
+                  Освещённая часть Луны продолжает увеличиваться, приближаясь к
+                  полнолунию.
+                </td>
+              </tr>
+
+              <tr>
+                <th headers="name" scope="row">Полнолуние</th>
+                <td headers="degphoto">
+                  <img src="../media/полнолуние.png" alt="Полнолуние" height="120" width="120" />
+                </td>
+                <td headers="dur">
+                  Через 14,8 дня после новолуния Луна находится чётко напротив
+                  Солнца. Луна полностью освещена и видна всю ночь. Земля
+                  находится между Солнцем и Луной.
+                </td>
+              </tr>
+
+              <tr>
+                <th headers="name" scope="row">Убывающая Луна</th>
+                <td headers="degphoto">
+                  <img src="../media/убывающая_справа.png" alt="убывающая_справа" height="120" width="120" />
+                </td>
+                <td headers="dur">
+                  Освещённая часть Луны начинает уменьшаться, светлая часть
+                  слева (в северном полушарии).
+                </td>
+              </tr>
+
+              <tr>
+                <th headers="name" scope="row">Последняя четверть</th>
+                <td headers="degphoto">
+                  <img src="../media/третья_четверть.png" alt="Последняя" height="120" width="120" />
+                </td>
+                <td headers="dur">
+                  Половина Луны освещена (левая половина в северном полушарии).
+                  Луна видна с вечера.
+                </td>
+              </tr>
+
+              <tr>
+                <th headers="name" scope="row">Убывающий серп</th>
+                <td headers="degphoto">
+                  <img src="../media/убывающий.png" alt="убывающая_слева" height="120" width="120" />
+                </td>
+                <td headers="dur">
+                  Освещённая часть продолжает уменьшаться, приближаясь к
+                  новолунию.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <h4>Фазы Луны и лунный календарь</h4>
+      <aside aria-label="Дополнительная информация">
+        Лунный календарь — это система отсчёта времени, основанная на цикле
+        смены фаз Луны, который в среднем длится около 29,5 дней. Он
+        используется для различных целей, от определения религиозных дат и
+        проведения садовых работ до астрологии и создания специальных функций
+        на наручных часах.
+      </aside>
+    </main>
+  </div>
+  <footer id="footer">
+    <div class="footer-text">
+      Контактная информация: moon@inbox.ru |
+      <a href="#"><img src="../media/tg.png" alt="Telegram"></a>
+      <a href="#"><img src="../media/vk.png" alt="VK"></a>
+    </div>
+    <p class="footer-text">&copy; 2025 Лунный календарь</p>
+  </footer>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/moon-finder.js"></script>
+</body>
+
+</html>
