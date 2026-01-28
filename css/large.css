@@ -19,8 +19,12 @@ nav a {
 }
 
 #moonPhaseImg {
-    width: auto;
-    max-width: 45vw;
-    max-height: 45vh;
-    height: auto;
+  display: block;
+  width: 100%;
+  max-width: 560px;  
+  height: auto; 
+  margin: 0 auto;
+  object-fit: contain;
+  max-height: 80vh; 
 }
+
