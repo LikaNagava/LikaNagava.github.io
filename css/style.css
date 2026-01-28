@@ -60,6 +60,7 @@ h4 {
   margin-top: 25px;
   font-style: oblique;
 }
+
 .res-text h4 {
   color: rgb(72, 172, 230);
   font-size: 2.2em;
@@ -67,6 +68,7 @@ h4 {
   margin-top: 25px;
   font-style: normal;
 }
+
 h5 {
   color: #51d9fc;
   font-size: 18px;
@@ -157,7 +159,7 @@ footer,
 
 .rowColumns {
   flex-direction: row;
-  Justify-content: center;
+  justify-content: center;
   flex-wrap: nowrap;
   display: flex;
   flex: 1;
@@ -182,6 +184,21 @@ footer,
   justify-content: center;
 }
 
+#moonPhaseImg {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  max-height: 80vh;
+}
+
+.current-moon-block { 
+  text-align: center;
+  margin: 20px 0;
+}
+
 html {
   height: 100%;
 }
@@ -192,14 +209,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
-
   background: linear-gradient(to bottom, #0f172a 0%, #1e1b4b 100%);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-
   color: #f1f5f9;
-
   transition: background 0.5s ease, color 0.5s ease;
 }
 
@@ -240,43 +254,43 @@ main {
 }
 
 .search-wrapper {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .search-box {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
 }
 
 .search-box input {
-    width: 100%;
-    padding: 15px 45px 15px 20px;
-    border-radius: 30px;
-    border: 2px solid #38bdf8;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    font-size: 1rem;
-    outline: none;
+  width: 100%;
+  padding: 15px 45px 15px 20px;
+  border-radius: 30px;
+  border: 2px solid #38bdf8;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  outline: none;
 }
 
 .search-icon {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.2rem;
-    pointer-events: auto;
-    cursor: pointer;
-    transition: 0.3s;
-    user-select: none;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
 }
 
 .search-icon:hover {
-    color: #38bdf8; 
-    transform: translateY(-50%) scale(1.2);
+  color: #38bdf8;
+  transform: translateY(-50%) scale(1.2);
 }
 
 /* Знаки зодиака */
@@ -378,20 +392,21 @@ main {
 }
 
 .form-buttons button {
-    padding: 12px 25px;
-    border-radius: 8px;
-    border: none;
-    font-family: 'Moonlight';
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Moonlight';
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .form-buttons button:first-child {
-    background-color: #38bdf8;
-    color: #0f172a;
+  background-color: #38bdf8;
+  color: #0f172a;
 }
- .form-buttons button:last-child {
+
+.form-buttons button:last-child {
   background: #f3f3f3;
   color: #000000;
 }
@@ -489,6 +504,7 @@ caption {
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow-x: scroll
 }
 
 th {
@@ -595,9 +611,9 @@ body.light-theme footer,
 }
 
 body.light-theme .search-box input {
-    background: #fff;
-    color: #000;
-    border-color: #1d014b;
+  background: #fff;
+  color: #000;
+  border-color: #1d014b;
 }
 
 body.light-theme h1 {
@@ -654,10 +670,12 @@ body.light-theme #phaseSelect {
   color: #1d014b;
   border-color: #1d014b;
 }
+
 body.light-theme .phase-result-item {
   background: #f8fafc;
   border-color: #cbd5e1;
 }
+
 body.light-theme .phase-result-dates {
   color: #000;
 }
@@ -680,10 +698,10 @@ body.light-theme th {
   border: 1px solid #cbd5e1;
 }
 
-body.light-theme col.name, 
+body.light-theme col.name,
 body.light-theme col.dur,
 body.light-theme col.degphoto {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 body.light-theme nav a {
@@ -737,7 +755,7 @@ body.light-theme .mainContainer {
 }
 
 body.light-theme .search-icon {
-    color: #1d014b; 
+  color: #1d014b;
 }
 
 body.light-theme .g {
