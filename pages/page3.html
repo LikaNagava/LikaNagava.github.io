@@ -9,9 +9,10 @@
     content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0 user-scalable=yes">
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 600px) and (orientation: portrait)" />
-  <link rel="stylesheet" href="../css/mobileLand.css" media="screen and (max-width: 1000px) and (orientation: landscape)" />
+  <link rel="stylesheet" href="../css/mobileLand.css"
+    media="screen and (max-width: 1000px) and (orientation: landscape)" />
   <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 601px) and (max-width: 950px) " />
-  <link rel="stylesheet" href="../css/laptop.css" media="screen and (min-width: 951px) and (max-width: 1300px)" />
+  <link rel="stylesheet" href="../css/laptop.css" media="screen and (min-width: 951px) and (max-width: 1400px)" />
   <link rel="stylesheet" href="../css/large.css" media="screen and (min-width: 1600px)" />
   <link rel="shortcut icon" href="favicon.ico" />
   <title>Знаки зодиака</title>
@@ -25,6 +26,10 @@
       <a href="../pages/page1.html">Луна</a>
       <a href="../pages/page2.html">Лунные Фазы</a>
       <a href="../pages/page3.html">Знак зодиака</a>
+      <a href="../pages/page4.html">FAQ</a>
+      <button id="font-toggle" class="theme-btn" onclick="toggleAccessibility()" title="Версия для слабовидящих">
+        <span style="font-size: 1.2em; font-weight: bold; color: inherit;">A+</span>
+      </button>
       <button id="theme-toggle" class="theme-btn">
         <img id="theme-icon" src="../media/полнолуние.png" alt="Сменить тему">
       </button>
@@ -39,9 +44,25 @@
           астрология приписывает определённые метафизические
           свойства и использует при анализе гороскопов.
         </p>
+        <p>
+          Солнечный знак — это знак, в котором находилось Солнце в момент вашего рождения.
+          Он определяет основные черты характера, поведение и жизненные цели.
+          Солнечный знак показывает, как вы проявляете себя в обществе и как стремитесь к своим целям.
+        </p>
+        <p>
+          Лунный знак — это знак, в котором находилась Луна в момент вашего
+          рождения. Он отвечает за внутренние эмоции, инстинкты и реакции. Лунный знак показывает, как вы
+          чувствуете себя внутри, как справляетесь со стрессом и какие у вас эмоциональные потребности.
+        </p>
+        <p style="font-weight: bold;">
+          Различие между этими знаками может возникать из-за разного времени нахождения Солнца и Луны 
+          в знаках: Солнце проводит около месяца в каждом знаке, а Луна — всего 2,5 дня. Это значит, 
+          что даже при одинаковом солнечном знаке у людей могут быть разные лунные знаки, что создает 
+          уникальную астрологическую карту и многослойность в личности.
+        </p>
         <div class="search-wrapper">
           <div class="search-box">
-            <input type="text" id="zodiacSearch" list="zodiacOptions" placeholder="Узнать о знаках зодиака больше...">
+            <input type="text" id="zodiacSearch" list="zodiacOptions" placeholder="Узнать о знаке зодиака...">
             <span class="search-icon" id="clearSearch" style="cursor: pointer;">✖️</span>
             <datalist id="zodiacOptions"></datalist>
           </div>
@@ -57,7 +78,7 @@
 
       <div class="btn-container">
         <button class="zodiac-btn" onclick="showZodiacForm()">
-          <h2>Узнать мой знак зодиака</h2>
+          <h2>Узнать мои знаки зодиака</h2>
         </button>
       </div>
 
@@ -97,10 +118,11 @@
     </div>
     <div class="footer-text">
       <a href="https://t.me/sayonaraf"><img src="../media/tg.png" alt="Telegram"></a>
-      <a href="#"><img src="../media/vk.png" alt="VK"></a>
+      <a href="https://vk.com/sayonaraf"><img src="../media/vk.png" alt="VK"></a>
     </div>
     <p class="footer-text">&copy; 2025 Лунный календарь</p>
   </footer>
+  <script src="../js/main.js"></script>
   <script src="../class/zodiacSigns.js"></script>
   <script src="../class/zodiacSun.js"></script>
   <script src="../class/zodiacMoon.js"></script>
@@ -109,4 +131,3 @@
 </body>
 
 </html>
-
