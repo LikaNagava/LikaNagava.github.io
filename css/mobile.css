@@ -1,34 +1,56 @@
-h1 {font-size: 1.9em;}
+h1 {
+    font-size: 1.9em;
+}
 
-h2 {font-size: 1.3em;}
+h2 {
+    font-size: 1.3em;
+}
 
-.res-text h4 {font-size: 1.2em;}
+.res-text h4 {
+    font-size: 1.2em;
+}
 
 h3 {
     font-size: 1em;
     padding-left: 2px;
 }
 
-h6 { font-size: 12px;}
+h6 {
+    font-size: 12px;
+}
 
-ul{font-size: 0.77em; }
+ul {
+    font-size: 0.77em;
+}
 
-p {font-size: 0.8em;}
+p {
+    font-size: 0.8em;
+}
+
+.styled-doc-list {
+    padding: 10px;
+    font-size: 0.9em;
+}
 
 cite {
     padding: 20px;
     margin: 20px 0;
     font-size: 0.7em;
 }
+
 nav a {
     font-size: 0.8em;
     margin: 0 3px;
 }
+
 .stronger {
     padding: 0.5em;
     font-size: 0.8em;
 }
-.footer-text {font-size: 11px;}
+
+.footer-text {
+    font-size: 11px;
+}
 
 .rowColumns {
     flex-direction: column;
@@ -60,13 +82,35 @@ nav a {
 
 main {
     margin: 20px;
-    padding: 25px;
+    padding: 25px; 
+    min-width: 90px;
 }
 
 #moonPhaseImg {
     width: auto;
-    max-width: 78vw;
-    max-height: 78vh;
+    max-width: 100% !important;
+    max-height: 70vh;
     height: auto;
 }
 
+.accessibility-mode {
+    zoom: 1 !important;
+}
+
+.doc-item.clickable:hover {
+    transform: translateX(2px);
+}
+
+body.accessibility-active {
+    zoom: 1 !important;
+}
+
+body.accessibility-active main {
+    padding: 15px;
+    margin: 10px;
+}
+
+body.accessibility-active nav a {
+    display: inline-block;
+    margin-bottom: 10px;
+}
