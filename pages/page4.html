@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>FAQ. Подробнее</title>
+    <meta name="description" content="FAQ" />
+    <meta name="keywords" content="фаза, луна, лунные фазы" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0 user-scalable=yes">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 600px) and (orientation: portrait)" />
+    <link rel="stylesheet" href="../css/mobileLand.css"
+        media="screen and (max-width: 1000px) and (orientation: landscape)" />
+    <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 601px) and (max-width: 950px) " />
+    <link rel="stylesheet" href="../css/laptop.css" media="screen and (min-width: 951px) and (max-width: 1400px)" />
+    <link rel="stylesheet" href="../css/large.css" media="screen and (min-width: 1600px)" />
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>FAQ</h1>
+        <nav role="navigation">
+            <a href="../index.html">В начало</a>
+            <a href="../pages/page1.html">Луна</a>
+            <a href="../pages/page2.html">Лунные Фазы</a>
+            <a href="../pages/page3.html">Знак зодиака</a>
+            <a href="../pages/page4.html">FAQ</a>
+            <button id="font-toggle" class="theme-btn" onclick="toggleAccessibility()" title="Версия для слабовидящих">
+                <span style="font-size: 1.2em; font-weight: bold; color: inherit;">A+</span>
+            </button>
+            <button id="theme-toggle" class="theme-btn">
+                <img id="theme-icon" src="../media/полнолуние.png" alt="Сменить тему">
+            </button>
+        </nav>
+    </div>
+    <div class="mainContainer column">
+        <main>
+            <p>
+                Дополнительная документация для лучшего ознакомления с темой.
+            </p>
+            <div class="search-wrapper">
+                <div class="search-box">
+                    <input type="text" id="docSearchInput" oninput="searchDocument()" placeholder="Поиск документа...">
+                    <span class="search-icon" id="clearSearch" style="cursor: pointer;">✖️</span>
+                </div>
+            </div>
+            <div id="doc-list-container">
+            </div>
+        </main>
+    </div>
+    <footer id="footer">
+        <div class="footer-text">
+            Контактная информация: moon@inbox.ru
+        </div>
+        <div class="footer-text">
+            <a href="https://t.me/sayonaraf"><img src="../media/tg.png" alt="Telegram"></a>
+            <a href="https://vk.com/sayonaraf"><img src="../media/vk.png" alt="VK"></a>
+        </div>
+        <p class="footer-text">&copy; 2025 Лунный календарь</p>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/theme.js"></script>
+</body>
+
+</html>
