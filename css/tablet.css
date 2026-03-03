@@ -11,4 +11,6 @@ nav a { margin: 0 10px; font-size: 1.1em; }
 main {
   margin: 25px;
   padding: 35px;
+  max-width: 600px;
+  min-width: 30px;
 }
