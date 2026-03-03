@@ -106,6 +106,18 @@ p {
   font-weight: 450;
 }
 
+#font-toggle {
+    color: #38bdf8;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+body.light-theme #font-toggle {
+    color: #1d014b;
+}
+
 .footer-text {
   color: #f8fafc !important;
   font-weight: 500;
@@ -204,7 +216,8 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0;    
+  transition: zoom 0.3s ease;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -245,6 +258,7 @@ nav a:hover {
 main {
   padding: 40px;
   max-width: 1000px;
+  min-width: 600px;
   margin: 40px auto;
   background: rgba(30, 41, 59, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -475,6 +489,43 @@ body.light-theme .styled-select {
   background-color: #ffffff;
   color: #1d014b;
   border-color: #1d014b;
+}
+
+#doc-list-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.doc-item.clickable {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-left: 4px solid #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-family: sans-serif;
+}
+
+.doc-item.clickable:hover {
+    background: rgba(56, 189, 248, 0.25);
+    transform: translateX(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #38bdf8;
+}
+
+body.light-theme .doc-item.clickable {
+    background: #f1f5f9;
+    color: #1d014b;
+    border-left-color: #1d014b;
+}
+
+body.light-theme .doc-item.clickable:hover {
+    background: #e2e8f0;
+    color: #4102a5;
 }
 
 /* Лунный фазы*/
