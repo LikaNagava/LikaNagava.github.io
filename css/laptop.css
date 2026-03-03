@@ -4,7 +4,9 @@ nav a {
   font-weight: bold;
 	font-size: 1.15em;
 }
-
+nav a:hover {
+  color: rgb(16, 0, 41);
+}
 #textFooter {
   line-height: 1.6;
   text-indent: 15px;
@@ -17,4 +19,8 @@ nav a {
 .tableContainer {
 	overflow: auto;
 	max-width: 100%;
+}
+main {
+  max-width: 800px;
+  min-width: 450px;
 }
