@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Солнечное затмение</title>
+    <meta name="description" content="FAQ" />
+    <meta name="keywords" content="лунное затмение, луна, солнечное затмение" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0 user-scalable=yes">
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 600px) and (orientation: portrait)" />
+    <link rel="stylesheet" href="../css/mobileLand.css"
+        media="screen and (max-width: 1000px) and (orientation: landscape)" />
+    <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 601px) and (max-width: 950px) " />
+    <link rel="stylesheet" href="../css/laptop.css" media="screen and (min-width: 951px) and (max-width: 1400px)" />
+    <link rel="stylesheet" href="../css/large.css" media="screen and (min-width: 1600px)" />
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <h1>Солнечное затмение</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">В начало</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page1.html">Луна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Лунные Фазы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page3.html">Знаки зодиака</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="eclipseDrop" role="button"
+                            data-bs-toggle="dropdown">
+                            Затмение
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="page4.html">Лунное
+                                    затмение</a></li>
+                            <li><a class="dropdown-item" href="page5.html">Солнечное
+                                    затмение</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="page6.html">FAQ</a></li>
+
+                    <div class="theme-controls">
+                        <button id="font-toggle" class="theme-btn" onclick="toggleAccessibility()">
+                            <span style="font-size: 1.1em; font-weight: bold; color: #38bdf8;">A+</span>
+                        </button>
+                        <button id="theme-toggle" class="theme-btn">
+                            <img id="theme-icon" src="../media/полнолуние.png" alt="Тема" style="width:22px;">
+                        </button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mainContainer column">
+        <main>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <h2 class="text-left">Солнечное затмение</h2>
+
+                    <div id="eclipseCarousel" class="carousel slide carousel-fade carousel-eclipse mb-5"
+                        data-bs-ride="carousel" data-bs-interval="100">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="../media/Каруссель_СолнечноеЗатмени/01.png"
+                                    alt="Фаза 1"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/03.png"
+                                    alt="Фаза 3">
+                            </div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/04.png"
+                                    alt="Фаза 4">
+                            </div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/05.png"
+                                    alt="Фаза 5">
+                            </div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/06.png"
+                                    alt="Фаза 6">
+                            </div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/07.png"
+                                    alt="Фаза 7">
+                            </div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/08.png"
+                                    alt="Фаза 8">
+                            </div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/09.png"
+                                    alt="Фаза 9">
+                            </div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/10.png"
+                                    alt="Фаза 10"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/11.png"
+                                    alt="Фаза 11"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/12.png"
+                                    alt="Фаза 12"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/13.png"
+                                    alt="Фаза 13"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/14.png"
+                                    alt="Фаза 14"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/15.png"
+                                    alt="Фаза 15"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/16.png"
+                                    alt="Фаза 16"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/17.png"
+                                    alt="Фаза 17"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/18.png"
+                                    alt="Фаза 18"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/19.png"
+                                    alt="Фаза 19"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/20.png"
+                                    alt="Фаза 20"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/21.png"
+                                    alt="Фаза 21"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/22.png"
+                                    alt="Фаза 22"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/23.png"
+                                    alt="Фаза 23"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/24.png"
+                                    alt="Фаза 24"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/25.png"
+                                    alt="Фаза 25"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/26.png"
+                                    alt="Фаза 26"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/27.png"
+                                    alt="Фаза 27"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/28.png"
+                                    alt="Фаза 28"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/29.png"
+                                    alt="Фаза 29"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/30.png"
+                                    alt="Фаза 30"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/31.png"
+                                    alt="Фаза 31"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/32.png"
+                                    alt="Фаза 32"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/33.png"
+                                    alt="Фаза 33"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/34.png"
+                                    alt="Фаза 34"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/35.png"
+                                    alt="Фаза 35"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/36.png"
+                                    alt="Фаза 36"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/37.png"
+                                    alt="Фаза 37"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_СолнечноеЗатмени/38.png"
+                                    alt="Фаза 38"></div>
+                        </div>
+                    </div>
+
+                    <p class="text-left">
+                        Солнечное затмение — это астрономическое явление, при котором Луна полностью или частично
+                        покрывает Солнце на некоторое время принаблюдении с определённой части Земли. Солнечные затмения
+                        происходят от 2 до 5 раз в год.
+                    </p>
+                    <p class="text-left">
+                        Виды солнечных затмений:
+                    </p>
+                    <ul class="eclipse-types-list">
+                        <li>Полное — лунный диск идеально совпадает с солнечным, полностью скрывая сияющую поверхность
+                            светила. В этот момент вокруг тёмной Луны на несколько минут (до 7,5) становится видна
+                            серебристая солнечная корона.
+                        </li>
+                        <li>
+                            Частное — лунный диск закрывает лишь часть солнечного. Его можно увидеть
+                            на обширных территориях вокруг полосы полного затмения.
+                        </li>
+                        <li>Кольцеобразное — случается, если Луна находится вблизи апогея своей орбиты и её
+                            видимый размер чуть меньше солнечного диска. В максимальной фазе такого затмения вокруг
+                            тёмной Луны остаётся светиться тонкий яркий ободок незакрытой части Солнца.
+                        </li>
+                        <li>
+                            Гибридное — наиболее редкий тип, сочетающий черты полного и кольцеобразного.
+                            Происходит, когда видимый диск Луны лишь незначительно уступает по размерам солнечному.
+                            В результате на разных участках лунной тени затмение видно то как полное, то как
+                            кольцеобразное.
+                        </li>
+                    </ul>
+                    
+                    <div class="row g-4 my-2">
+                        <div class="col-md-6">
+                            <div class="glass-element p-4 h-100">
+                                <h4 class="text-info mb-3">📜 Исторические наблюдения</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3 d-flex">
+                                        <span class="me-3 text-info">🏛️</span>
+                                        <span>Древние греки считали затмение гневом богов и прекращали сражения.</span>
+                                    </li>
+                                    <li class="mb-3 d-flex">
+                                        <span class="me-3 text-info">⚔️</span>
+                                        <span>В 585 г. до н.э. затмение остановило войну между лидийцами и
+                                            мидийцами.</span>
+                                    </li>
+                                    <li class="mb-3 d-flex">
+                                        <span class="me-3 text-info">🔭</span>
+                                        <span>Эйнштейн использовал солнечное затмение 1919 года для проверки общей
+                                            теории относительности.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="glass-element p-4 h-100">
+                                <h4 class="text-info mb-3">🔬 Научные объяснения</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3 d-flex">
+                                        <span class="me-3 text-info">⏳</span>
+                                        <span>Полное затмение длится не более 7,5 минут — Луна лишь чуть больше Солнца
+                                            на небе.</span>
+                                    </li>
+                                    <li class="mb-3 d-flex">
+                                        <span class="me-3 text-info">🌍</span>
+                                        <span>Кольцеобразное затмение возникает, когда Луна слишком далеко, чтобы
+                                            закрыть диск полностью.</span>
+                                    </li>
+                                    <li class="mb-3 d-flex">
+                                        <span class="me-3 text-info">🕶️</span>
+                                        <span>Смотреть на Солнце без специальной защиты опасно даже во время
+                                            затмения.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-left mt-5 mb-5">
+                        Солнечные затмения оказали значительное влияние на культуру, в частности, способствовали
+                        формированию мифов, легенд и ритуалов у разных народов. В искусстве и литературе образы затмений
+                        также нашли отражение. От древних петроглифов до современных картин и фильмов, затмения служат
+                        метафорическим элементом, символизирующим предзнаменование, переход, конец или начало.
+                    </p>
+
+                    <div class="glass-element custom-eclipse-accordion">
+                        <div class="accordion" id="eclipseDetails">
+                            <div class="accordion-item">
+                                <h7 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseInfo">
+                                        Подробнее о явлении
+                                    </button>
+                                </h7>
+                                <div id="collapseInfo" class="accordion-collapse collapse"
+                                    data-bs-parent="#eclipseDetails">
+                                    <div class="accordion-body">
+                                        <p>Полные солнечные затмения происходят примерно каждые 18 месяцев, а кольцеобразные –
+                                            раз в 1–2 года. Гибридные затмения — самые редкие, поскольку случаются лишь
+                                            несколько раз в столетие, примерно раз в десять лет. </p>
+                                        <p> Каждые 18 лет и 11 месяцев случаются почти полностью одинаковые затмения.
+                                            Этот период называется «сарос» или драконический период.​​</p>
+                                        <p>Полное солнечное затмение само по себе впечатляет, но одновременно с ним
+                                            можно наблюдать и особые астрономические эффекты. Поскольку Луна покрыта
+                                            кратерами, ее края не идеально ровные. Во время затмения, перед тем, как
+                                            лунный диск полностью закроет Солнце, последние лучи солнечного света
+                                            проходят через горы и долины Луны и создают ряд ярких точек, напоминающий
+                                            нитку бус. Это явление называют Четки Бейли — в честь английского астронома
+                                            Фрэнсиса Бэйли. Бриллиантовое кольцо
+                                            наблюдается, когда остается всего одна “бусина”, которая выглядит как
+                                            сияющий бриллиант в светящемся кольце</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Кнопка и Расчеты -->
+                    <div class="d-flex flex-column align-items-center gap-3 mb-4">
+                        <button id="calcSolarBtn" class="btn zodiac-btn">
+                            <h7>Рассчитать 3 солнечных затмения</h7>
+                        </button>
+                    </div>
+
+
+                    <!-- Прогресс-бар -->
+                    <div id="calcBox" class="d-none">
+                        <div class="progress mb-4"
+                            style="height: 12px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                            <div id="progressBar"
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                                style="width: 0%"></div>
+                        </div>
+
+                        <div id="results" class="glass-element d-none results-container">
+                            <h3 id="resultTitle" style="font-family: 'Moonlight'; color: #38bdf8; margin-bottom: 20px;">
+                            </h3>
+                            <ul id="resultsList" class="p-0"></ul>
+                            <div class="text-center">
+                                <button class="btn-hide" onclick="hideResults()">Скрыть расчеты</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer id="footer">
+        <div class="footer-text">
+            Контактная информация: moon@inbox.ru
+        </div>
+        <div class="footer-text">
+            <a href="https://t.me/sayonaraf"><img src="../media/tg.png" alt="Telegram"></a>
+            <a href="https://vk.com/sayonaraf"><img src="../media/vk.png" alt="VK"></a>
+        </div>
+        <p class="footer-text">&copy; 2025 Лунный календарь</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <!-- Подключение локального Bootstrap JS (Bundle включает Popper.js) -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/eclipse.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>FAQ. Подробнее</title>
+    <meta name="description" content="FAQ" />
+    <meta name="keywords" content="документация, луна, лунные фазы" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0 user-scalable=yes">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 600px) and (orientation: portrait)" />
+    <link rel="stylesheet" href="../css/mobileLand.css"
+        media="screen and (max-width: 1000px) and (orientation: landscape)" />
+    <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 601px) and (max-width: 950px) " />
+    <link rel="stylesheet" href="../css/laptop.css" media="screen and (min-width: 951px) and (max-width: 1400px)" />
+    <link rel="stylesheet" href="../css/large.css" media="screen and (min-width: 1600px)" />
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <h1>FAQ</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">В начало</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page1.html">Луна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Лунные Фазы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page3.html">Знаки зодиака</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="eclipseDrop" role="button"
+                            data-bs-toggle="dropdown">
+                            Затмение
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="page4.html">Лунное
+                                    затмение</a></li>
+                            <li><a class="dropdown-item" href="page5.html">Солнечное
+                                    затмение</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="page6.html">FAQ</a></li>
+
+                    <div class="theme-controls">
+                        <button id="font-toggle" class="theme-btn" onclick="toggleAccessibility()">
+                            <span style="font-size: 1.1em; font-weight: bold; color: #38bdf8;">A+</span>
+                        </button>
+                        <button id="theme-toggle" class="theme-btn">
+                            <img id="theme-icon" src="../media/полнолуние.png" alt="Тема" style="width:22px;">
+                        </button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="mainContainer column">
+        <main>
+            <p>
+                В целях обеспечения полноты и глубины понимания рассматриваемой темы, ниже представлен перечень
+                релевантных информационных ресурсов. Указанные документы служат основой для дальнейшего изучения как
+                теоретических, так и практических аспектов.
+            </p>
+            <div class="search-wrapper">
+                <div class="search-box">
+                    <input type="text" id="docSearchInput" oninput="searchDocument()" placeholder="Поиск документа...">
+                    <span class="search-icon" id="clearSearch" style="cursor: pointer;">✖️</span>
+                </div>
+            </div>
+            <div id="doc-list-container">
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6 col-md-8">
+                    <div class="glass-element p-5">
+                        <h3 class="text-center mb-4">🌌 Узнавайте о всех новостях сайта</h3>
+                        <form id="subscribeForm" action="#" method="post" class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label text-light">Имя</label>
+                                <input type="text" class="form-control bg-dark bg-opacity-25 text-light border-info"
+                                    id="name" placeholder="Ваше имя">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label text-light">Email</label>
+                                <input type="email" class="form-control bg-dark bg-opacity-25 text-light border-info"
+                                    id="email" placeholder="example@mail.com" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label text-light">Какие темы вас интересуют?</label>
+                                <ul class="topics-list">
+                                    <li>
+                                        <input type="checkbox" id="topic1" name="topics" value="moon">
+                                        <label for="topic1">🌕 Луна</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="topic2" name="topics" value="phases">
+                                        <label for="topic2">🌙 Лунные фазы</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="topic3" name="topics" value="zodiac">
+                                        <label for="topic3">⭐ Знаки зодиака</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="topic4" name="topics" value="lunar_eclipse">
+                                        <label for="topic4">🌑 Лунное затмение</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="topic5" name="topics" value="solar_eclipse">
+                                        <label for="topic5">☀️ Солнечное затмение</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="agreement" required>
+                                    <label class="form-check-label text-light" for="agreement">
+                                        Согласен на обработку данных
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn zodiac-btn px-5">Подписаться</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const form = document.getElementById('subscribeForm');
+                    if (form) {
+                        form.addEventListener('submit', function (e) {
+                            e.preventDefault();
+                            const agreement = document.getElementById('agreement');
+                            const errorDiv = document.getElementById('agreementError');
+
+                            if (!agreement.checked) {
+                                errorDiv.style.display = 'block';
+                                return;
+                            } else {
+                                errorDiv.style.display = 'none';
+                            }
+                            form.reset();
+                            const alertDiv = document.createElement('div');
+                            alertDiv.className = 'alert alert-success alert-dismissible fade show mt-4';
+                            alertDiv.setAttribute('role', 'alert');
+                            alertDiv.innerHTML = `<strong>Спасибо!</strong> Вы успешно подписались на новости сайта.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>`;
+                            form.parentNode.insertBefore(alertDiv, form.nextSibling);
+                            setTimeout(() => alertDiv.remove(), 5000);
+                        });
+                    }
+                });
+            </script>
+
+        </main>
+    </div>
+    <footer id="footer">
+        <div class="footer-text">
+            Контактная информация: moon@inbox.ru
+        </div>
+        <div class="footer-text">
+            <a href="https://t.me/sayonaraf"><img src="../media/tg.png" alt="Telegram"></a>
+            <a href="https://vk.com/sayonaraf"><img src="../media/vk.png" alt="VK"></a>
+        </div>
+        <p class="footer-text">&copy; 2025 Лунный календарь</p>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/theme.js"></script>
+</body>
+
+</html>
