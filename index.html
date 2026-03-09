@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Луна и ее влияние</title>
-  <meta name="description" content="Луна и ее влияние" />
+  <title>Влияние луны</title>
+  <meta name="description" content="Влияние луны" />
   <meta name="keywords" content="фаза, луна, лунные фазы" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0 user-scalable=yes">
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 600px) and (orientation: portrait)" />
   <link rel="stylesheet" href="css/mobileLand.css"
     media="screen and (max-width: 1000px) and (orientation: landscape)" />
@@ -19,22 +20,47 @@
 </head>
 
 <body>
-  <div class="header">
-    <h1>Введение</h1>
-    <nav role="navigation">
-      <a href="index.html">В начало</a>
-      <a href="pages/page1.html">Луна</a>
-      <a href="pages/page2.html">Лунные Фазы</a>
-      <a href="pages/page3.html">Знак зодиака</a>
-      <a href="pages/page4.html">FAQ</a>
-      <button id="font-toggle" class="theme-btn" onclick="toggleAccessibility()" title="Версия для слабовидящих">
-        <span style="font-size: 1.2em; font-weight: bold; color: inherit;">A+</span>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <h1>Введение</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <button id="theme-toggle" class="theme-btn">
-        <img id="theme-icon" src="media/полнолуние.png" alt="Сменить тему">
-      </button>
-    </nav>
-  </div>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="pages/index.html">В начало</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/page1.html">Луна</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/page2.html">Лунные Фазы</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/page3.html">Знаки зодиака</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="eclipseDrop" role="button"
+              data-bs-toggle="dropdown">
+              Затмение
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pages/page4.html">Лунное
+                  затмение</a></li>
+              <li><a class="dropdown-item" href="pages/page5.html">Солнечное
+                  затмение</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="pages/page6.html">FAQ</a></li>
+
+          <div class="theme-controls">
+            <button id="font-toggle" class="theme-btn" onclick="toggleAccessibility()">
+              <span style="font-size: 1.1em; font-weight: bold; color: #38bdf8;">A+</span>
+            </button>
+            <button id="theme-toggle" class="theme-btn">
+              <img id="theme-icon" src="media/полнолуние.png" alt="Тема" style="width:22px;">
+            </button>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <div class="mainContainer column">
     <main>
       <div class="rowColumns">
@@ -55,7 +81,7 @@
       </div>
     </main>
   </div>
-<footer id="footer">
+  <footer id="footer">
     <div class="footer-text">
       Контактная информация: moon@inbox.ru
     </div>
@@ -66,6 +92,7 @@
     <p class="footer-text">&copy; 2025 Лунный календарь</p>
   </footer>
   <script src="js/main.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="js/moon.js"></script>
   <script src="js/theme.js"></script>
 </body>
