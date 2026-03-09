@@ -6,10 +6,13 @@
   <title>Лунные фазы</title>
   <meta name="description" content="Информация о лунных фазах" />
   <meta name="keywords" content="фаза, луна, лунные фазы, новолуние" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0 user-scalable=yes">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0 user-scalable=yes">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 600px) and (orientation: portrait)" />
-  <link rel="stylesheet" href="../css/mobileLand.css" media="screen and (max-width: 1000px) and (orientation: landscape)" />
+  <link rel="stylesheet" href="../css/mobileLand.css"
+    media="screen and (max-width: 1000px) and (orientation: landscape)" />
   <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 601px) and (max-width: 950px) " />
   <link rel="stylesheet" href="../css/laptop.css" media="screen and (min-width: 951px) and (max-width: 1400px)" />
   <link rel="stylesheet" href="../css/large.css" media="screen and (min-width: 1600px)" />
@@ -17,23 +20,48 @@
 </head>
 
 <body>
-  <header accesskey="h" tabindex="1" contextmenu="header-menu" id="header">
-    <h1>Лунный календарь</h1>
-    <nav role="navigation">
-      <a href="../index.html">В начало</a>
-      <a href="../pages/page1.html">Луна</a>
-      <a href="../pages/page2.html">Лунные Фазы</a>
-      <a href="../pages/page3.html">Знак зодиака</a>
-      <a href="../pages/page4.html">FAQ</a>
-      <button id="font-toggle" class="theme-btn" onclick="toggleAccessibility()" title="Версия для слабовидящих">
-        <span style="font-size: 1.2em; font-weight: bold; color: inherit;">A+</span>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <h1>Лунный календарь</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <button id="theme-toggle" class="theme-btn">
-        <img id="theme-icon" src="../media/полнолуние.png" alt="Сменить тему">
-      </button>
-    </nav>
-  </header>
-  <div class="container">
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="../index.html">В начало</a></li>
+          <li class="nav-item"><a class="nav-link" href="page1.html">Луна</a></li>
+          <li class="nav-item"><a class="nav-link" href="page2.html">Лунные Фазы</a></li>
+          <li class="nav-item"><a class="nav-link" href="page3.html">Знаки зодиака</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="eclipseDrop" role="button"
+              data-bs-toggle="dropdown">
+              Затмение
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="page4.html">Лунное
+                  затмение</a></li>
+              <li><a class="dropdown-item" href="page5.html">Солнечное
+                  затмение</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="page6.html">FAQ</a></li>
+
+          <div class="theme-controls">
+            <button id="font-toggle" class="theme-btn" onclick="toggleAccessibility()">
+              <span style="font-size: 1.1em; font-weight: bold; color: #38bdf8;">A+</span>
+            </button>
+            <button id="theme-toggle" class="theme-btn">
+              <img id="theme-icon" src="../media/полнолуние.png" alt="Тема" style="width:22px;">
+            </button>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mainContainer">
     <main tabindex="5">
       <section aria-label="Цитата">
         <cite hidden>
@@ -79,7 +107,7 @@
         <section class="moon-finder">
           <h2>Узнать ближайшие даты фаз</h2>
           <div class="finder-controls">
-            <select id="phaseSelect" class ="styled-select">
+            <select id="phaseSelect" class="styled-select">
               <option value="">Выбери фазу из списка...</option>
               <option value="Новолуние">Новолуние</option>
               <option value="Растущий серп">Растущий серп</option>
@@ -92,7 +120,7 @@
             </select>
           </div>
 
-          <div id="phaseResults" class = "phase-resuls-container">
+          <div id="phaseResults" class="phase-resuls-container">
 
           </div>
         </section>
@@ -238,6 +266,7 @@
     <p class="footer-text">&copy; 2025 Лунный календарь</p>
   </footer>
   <script src="../js/main.js"></script>
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../js/theme.js"></script>
   <script src="../js/moon-finder.js"></script>
 </body>
