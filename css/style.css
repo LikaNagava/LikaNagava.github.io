@@ -88,6 +88,16 @@ h6 {
   font-family: Georgia, serif;
 }
 
+h7 {
+  color: #ffffff;
+  font-family: 'Moonlight';
+  font-size: 1.8em;
+  padding-left: 20px;
+  margin: 30px 0 20px 0;
+  line-height: normal;
+  padding: 10px;
+}
+
 .stronger {
   color: #001031;
   font-size: 20px;
@@ -107,15 +117,15 @@ p {
 }
 
 #font-toggle {
-    color: #38bdf8;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+  color: #38bdf8;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 body.light-theme #font-toggle {
-    color: #1d014b;
+  color: #1d014b;
 }
 
 .footer-text {
@@ -163,12 +173,6 @@ footer,
   background-blend-mode: screen;
 }
 
-.row {
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2em;
-}
-
 .rowColumns {
   flex-direction: row;
   justify-content: center;
@@ -206,7 +210,7 @@ footer,
   max-height: 80vh;
 }
 
-.current-moon-block { 
+.current-moon-block {
   text-align: center;
   margin: 20px 0;
 }
@@ -216,7 +220,7 @@ html {
 }
 
 body {
-  margin: 0;    
+  margin: 0;
   transition: zoom 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -492,40 +496,40 @@ body.light-theme .styled-select {
 }
 
 #doc-list-container {
-    margin-top: 20px;
-    width: 100%;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .doc-item.clickable {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border-left: 4px solid #38bdf8;
-    background: rgba(56, 189, 248, 0.1);
-    padding: 12px 20px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    font-family: sans-serif;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-left: 4px solid #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-family: sans-serif;
 }
 
 .doc-item.clickable:hover {
-    background: rgba(56, 189, 248, 0.25);
-    transform: translateX(10px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    color: #38bdf8;
+  background: rgba(56, 189, 248, 0.25);
+  transform: translateX(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: #38bdf8;
 }
 
 body.light-theme .doc-item.clickable {
-    background: #f1f5f9;
-    color: #1d014b;
-    border-left-color: #1d014b;
+  background: #f1f5f9;
+  color: #1d014b;
+  border-left-color: #1d014b;
 }
 
 body.light-theme .doc-item.clickable:hover {
-    background: #e2e8f0;
-    color: #4102a5;
+  background: #e2e8f0;
+  color: #4102a5;
 }
 
 /* Лунный фазы*/
@@ -678,6 +682,11 @@ body.light-theme h2 {
   border-left-color: #08011d;
 }
 
+body.light-theme h7 {
+  color: #000000;
+  border-left-color: #08011d;
+}
+
 body.light-theme .zodiac-btn h2 {
   color: #02035a;
 }
@@ -812,4 +821,344 @@ body.light-theme .search-icon {
 body.light-theme .g {
   max-height: 1.3em;
   width: 100%;
+}
+
+body.light-theme .navbar {
+  background-color: #f8f9fa !important;
+}
+
+body.light-theme .navbar .nav-link {
+  color: #1d014b !important;
+}
+
+body.light-theme .navbar .nav-link:hover,
+body.light-theme .navbar .nav-link.active {
+  color: #4102a5 !important;
+}
+
+body.light-theme .dropdown-menu {
+  background-color: #ffffff;
+  border-color: #1d014b;
+}
+
+body.light-theme .dropdown-item {
+  color: #1d014b;
+}
+
+body.light-theme .dropdown-item:hover {
+  background-color: #ced8fd;
+  color: #1b1b1b;
+}
+
+body.light-theme .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+body.light-theme .theme-btn span {
+  color: #1d014b;
+}
+
+body.light-theme .glass-element {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid #ddd !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+body.light-theme .accordion-button {
+  color: #1d014b !important;
+  background-color: transparent !important;
+}
+
+body.light-theme .accordion-button:not(.collapsed) {
+  border-bottom: 1px solid #1d014b !important;
+}
+
+body.light-theme .accordion-button::after {
+  filter: brightness(0.2);
+}
+
+body.light-theme .accordion-body,
+body.light-theme .accordion-body p {
+  color: #333 !important;
+  background-color: transparent;
+}
+
+body.light-theme #resultsList li {
+  background: #ffffff;
+  border-left: 4px solid #1d014b;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  list-style: none;
+  transition: 0.3s;
+}
+
+body.light-theme #resultsList li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  background: #f8f8ff;
+}
+
+body.light-theme .btn-hide {
+  background: transparent;
+  border: 2px solid #1d014b;
+  color: #1d014b;
+}
+
+body.light-theme .btn-hide:hover {
+  background: #1d014b;
+  color: #fff;
+}
+
+
+/* bootstrap */
+.navbar {
+  background-color: #0b1120 !important;
+  border-bottom: 2px solid rgba(56, 189, 248, 0.4);
+  padding: 12px 0;
+  z-index: 1000;
+}
+
+.nav-link {
+  padding: 0.5rem 0.8rem !important; 
+  color: #94a3b8 !important; 
+  border-radius: 20px;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #38bdf8 !important; 
+  background: rgba(56, 189, 248, 0.1);
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+}
+
+.nav-item {
+  margin: 0 5px;
+}
+
+.dropdown-menu {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.dropdown-item {
+  color: #94a3b8;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.dropdown-item:hover {
+  background: rgba(56, 189, 248, 0.1);
+  color: #38bdf8;
+}
+
+.theme-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+.theme-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 30px;
+}
+
+/* Карусель (анимация затмения) */
+.carousel-eclipse {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.progress {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 10px;
+  border-radius: 10px;
+}
+
+.glass-element {
+  background: rgba(15, 23, 42, 0.4) !important;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(56, 189, 248, 0.3) !important;
+  border-radius: 25px !important;
+  padding: 15px;
+  margin-bottom: 40px;
+}
+
+.accordion-item {
+  background: transparent !important;
+  border: none !important;
+}
+
+.accordion-button {
+  background: transparent !important;
+  color: #38bdf8 !important;
+  font-family: 'Moonlight', sans-serif;
+  font-size: 1.8rem !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 20px !important;
+}
+
+.accordion-button:not(.collapsed) {
+  border-bottom: 1px solid rgba(56, 189, 248, 0.3) !important;
+  margin-bottom: 15px;
+}
+
+.accordion-button::after {
+  filter: invert(72%) sepia(95%) saturate(321%) hue-rotate(175deg);
+}
+
+.accordion-body {
+  color: #001b3f !important;
+  padding: 10px 20px 30px !important;
+}
+
+.btn-hide {
+  background: transparent;
+  border: 2px solid rgba(56, 189, 248, 0.5);
+  color: #38bdf8;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-family: 'Moonlight';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.btn-hide:hover {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: #38bdf8;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+#resultsList li {
+  list-style: none;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  font-size: 1.2rem;
+  border-left: 4px solid #38bdf8;
+}
+
+.custom-eclipse-accordion {
+  margin-top: -20px !important;
+  padding: 5px 15px !important;
+}
+
+.custom-eclipse-accordion h7 {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+}
+
+.navbar .container {
+  background-image: none !important;
+  animation: none;
+}
+
+body.light-theme .form-label,
+body.light-theme .form-check-label {
+  color: #1d014b !important;
+}
+
+body.light-theme .form-control,
+body.light-theme .form-select {
+  background: #fff !important;
+  color: #000 !important;
+  border-color: #1d014b !important;
+}
+
+body.light-theme .form-check-input {
+  background: #fff;
+  border-color: #1d014b;
+}
+
+/* Стили для списка видов затмений */
+.eclipse-types-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+.eclipse-types-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #e2e8f0;
+    font-weight: 450;
+    text-align: justify;
+}
+
+.eclipse-types-list li::before {
+    content: "◼";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #38bdf8;
+    font-size: 1.0rem;
+    line-height: 1.6;
+}
+
+/* Светлая тема */
+body.light-theme .eclipse-types-list li {
+    color: #1d014b;
+}
+
+body.light-theme .eclipse-types-list li::before {
+    color: #1d014b;
+}
+
+.glass-element form {
+    font-size: 1.2rem;
+}
+
+.glass-element form .form-label,
+.glass-element form .form-check-label,
+.glass-element form .topics-list label,
+.glass-element form input,
+.glass-element form select,
+.glass-element form button {
+    font-size: 1.2rem;
+}
+
+.glass-element form .form-control,
+.glass-element form .form-select {
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem; /* чуть увеличим поля для комфорта */
+}
+
+/* Сообщение об ошибке (оставляем меньший шрифт для заметки) */
+#agreementError {
+    font-size: 1rem;
+}
+
+/* Адаптация для светлой темы, если нужно */
+body.light-theme .glass-element form .form-control,
+body.light-theme .glass-element form .form-select {
+    background-color: #fff;
+    color: #000;
+    border-color: #1d014b;
 }
