@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>FAQ. Подробнее</title>
+    <title>Лунное затмение</title>
     <meta name="description" content="FAQ" />
-    <meta name="keywords" content="фаза, луна, лунные фазы" />
+    <meta name="keywords" content="лунное затмение, луна, солнечное затмение" />
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0 user-scalable=yes">
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 600px) and (orientation: portrait)" />
     <link rel="stylesheet" href="../css/mobileLand.css"
@@ -19,34 +21,280 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1>FAQ</h1>
-        <nav role="navigation">
-            <a href="../index.html">В начало</a>
-            <a href="../pages/page1.html">Луна</a>
-            <a href="../pages/page2.html">Лунные Фазы</a>
-            <a href="../pages/page3.html">Знак зодиака</a>
-            <a href="../pages/page4.html">FAQ</a>
-            <button id="font-toggle" class="theme-btn" onclick="toggleAccessibility()" title="Версия для слабовидящих">
-                <span style="font-size: 1.2em; font-weight: bold; color: inherit;">A+</span>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <h1>Лунное затмение</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <button id="theme-toggle" class="theme-btn">
-                <img id="theme-icon" src="../media/полнолуние.png" alt="Сменить тему">
-            </button>
-        </nav>
-    </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">В начало</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page1.html">Луна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Лунные Фазы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page3.html">Знаки зодиака</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="eclipseDrop" role="button"
+                            data-bs-toggle="dropdown">
+                            Затмение
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="page4.html">Лунное
+                                    затмение</a></li>
+                            <li><a class="dropdown-item" href="page5.html">Солнечное
+                                    затмение</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="page6.html">FAQ</a></li>
+
+                    <!-- Кнопки темы -->
+                    <div class="theme-controls">
+                        <button id="font-toggle" class="theme-btn" onclick="toggleAccessibility()">
+                            <span style="font-size: 1.1em; font-weight: bold; color: #38bdf8;">A+</span>
+                        </button>
+                        <button id="theme-toggle" class="theme-btn">
+                            <img id="theme-icon" src="../media/полнолуние.png" alt="Тема" style="width:22px;">
+                        </button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="mainContainer column">
         <main>
-            <p>
-                Дополнительная документация для лучшего ознакомления с темой.
-            </p>
-            <div class="search-wrapper">
-                <div class="search-box">
-                    <input type="text" id="docSearchInput" oninput="searchDocument()" placeholder="Поиск документа...">
-                    <span class="search-icon" id="clearSearch" style="cursor: pointer;">✖️</span>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <h2 class="text-left">Лунное затмение</h2>
+
+                    <div id="eclipseCarousel" class="carousel slide carousel-fade carousel-eclipse mb-5"
+                        data-bs-ride="carousel" data-bs-interval="100">
+                        <div class="carousel-inner">
+                            <!-- Пример структуры для 20 картинок -->
+                            <div class="carousel-item active"><img src="../media/Каруссель_ЛунноеЗатмение/01.png"
+                                    alt="Фаза 1"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/03.png" alt="Фаза 3">
+                            </div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/04.png" alt="Фаза 4">
+                            </div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/05.png" alt="Фаза 5">
+                            </div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/06.png" alt="Фаза 6">
+                            </div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/07.png" alt="Фаза 7">
+                            </div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/08.png" alt="Фаза 8">
+                            </div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/09.png" alt="Фаза 9">
+                            </div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/10.png"
+                                    alt="Фаза 10"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/11.png"
+                                    alt="Фаза 11"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/12.png"
+                                    alt="Фаза 12"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/13.png"
+                                    alt="Фаза 13"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/14.png"
+                                    alt="Фаза 14"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/15.png"
+                                    alt="Фаза 15"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/16.png"
+                                    alt="Фаза 16"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/17.png"
+                                    alt="Фаза 17"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/18.png"
+                                    alt="Фаза 18"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/19.png"
+                                    alt="Фаза 19"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/20.png"
+                                    alt="Фаза 20"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/21.png"
+                                    alt="Фаза 21"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/22.png"
+                                    alt="Фаза 22"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/23.png"
+                                    alt="Фаза 23"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/24.png"
+                                    alt="Фаза 24"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/25.png"
+                                    alt="Фаза 25"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/26.png"
+                                    alt="Фаза 26"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/27.png"
+                                    alt="Фаза 27"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/28.png"
+                                    alt="Фаза 28"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/29.png"
+                                    alt="Фаза 29"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/30.png"
+                                    alt="Фаза 30"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/31.png"
+                                    alt="Фаза 31"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/32.png"
+                                    alt="Фаза 32"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/33.png"
+                                    alt="Фаза 33"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/34.png"
+                                    alt="Фаза 34"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/35.png"
+                                    alt="Фаза 35"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/36.png"
+                                    alt="Фаза 36"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/37.png"
+                                    alt="Фаза 37"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/38.png"
+                                    alt="Фаза 38"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/39.png"
+                                    alt="Фаза 39"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/40.png"
+                                    alt="Фаза 40"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/41.png"
+                                    alt="Фаза 41"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/42.png"
+                                    alt="Фаза 42"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/43.png"
+                                    alt="Фаза 43"></div>
+                            <div class="carousel-item"><img src="../media/Каруссель_ЛунноеЗатмение/44.png"
+                                    alt="Фаза 44"></div>
+                        </div>
+                    </div>
+
+                    <p class="text-left">
+                        Лунное затмение — это астрономическое явление, происходящее в момент, когда Луна входит в
+                        конустени, отбрасываемой Землёй. В этот период естественный спутник может приобретать
+                        темно-красный оттенок. Лунные затмения обычно наблюдаются два раза в год, хотя иногда в течение
+                        календарного года случаются три, четыре и очень редко пять затмений.
+                    </p>
+
+                    <p class="text-left">
+                        Виды лунных затмений:
+                    </p>
+                    <ul class="eclipse-types-list">
+                        <li>Полное — тень Земли отбрасывается на всю поверхность Луны.
+                        </li>
+                        <li>
+                            Частное — в тень Земли попадает только фрагмент Луны, что выглядит как «откусывание» части
+                            лунной поверхности.
+                        </li>
+                        <li>Полутеневое — внешняя часть тени Земли отбрасывается на лунную поверхность — наиболее слабый
+                            вид, за которым труднее всего наблюдать.
+                        </li>
+                    </ul>
+
+                    <div class="row g-4 my-2">
+                        <div class="col-md-6">
+                            <div class="glass-element p-4 h-100">
+                                <h4 class="text-info mb-3">🌕 Исторические наблюдения</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3 d-flex">
+                                        <span class="me-3 text-info">📜</span>
+                                        <span>Древние китайцы верили, что дракон пожирает Луну во время затмения, и били
+                                            в барабаны, чтобы прогнать его.</span>
+                                    </li>
+                                    <li class="mb-3 d-flex">
+                                        <span class="me-3 text-info">⚓</span>
+                                        <span>Колумб в 1504 году использовал лунное затмение, чтобы запугать ямайских
+                                            аборигенов и получить провизию.</span>
+                                    </li>
+                                    <li class="mb-3 d-flex">
+                                        <span class="me-3 text-info">🔭</span>
+                                        <span>Аристотель по тени Земли на Луне доказал, что наша планета имеет форму
+                                            шара.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="glass-element p-4 h-100">
+                                <h4 class="text-info mb-3">🌕 Научные объяснения</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3 d-flex">
+                                        <span class="me-3 text-info">🌍</span>
+                                        <span>Красный цвет — эффект рассеяния света в атмосфере Земли (как на
+                                            закате).</span>
+                                    </li>
+                                    <li class="mb-3 d-flex">
+                                        <span class="me-3 text-info">⏳</span>
+                                        <span>Лунные затмения всегда происходят в полнолуние, но не в каждое полнолуние
+                                            из-за наклона орбиты.</span>
+                                    </li>
+                                    <li class="mb-3 d-flex">
+                                        <span class="me-3 text-info">🌡️</span>
+                                        <span>Во время затмения поверхность Луны остывает на сотни градусов за несколько
+                                            часов.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-left mt-5 mb-5">
+                        Следующее лунное затмение происходит иногда через лунный месяц, однако чаще оно происходит
+                        примерно через полгода, в следующий сезон затмений. Период между последовательными прохождениями
+                        Солнцем
+                        узлов лунной орбиты равен 173,31 суток, половине так называемого драконического года.
+                    </p>
+
+                    <div class="glass-element custom-eclipse-accordion">
+                        <div class="accordion" id="eclipseDetails">
+                            <div class="accordion-item">
+                                <h7 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseInfo">
+                                        Подробнее о явлении
+                                    </button>
+                                </h7>
+                                <div id="collapseInfo" class="accordion-collapse collapse"
+                                    data-bs-parent="#eclipseDetails">
+                                    <div class="accordion-body">
+                                        <p>Лунное затмение может наблюдаться на половине территории Земли (там, где на
+                                            момент затмения Луна находится над горизонтом). Вид затенённой Луны с любой
+                                            точки наблюдения практически одинаков.</p>
+                                        <p>Почему это происходит? Земля освещается Солнцем и отбрасывает в пространство
+                                            тень
+                                            и полутень. Когда Луна проходит через эти зоны, мы видим затмение. Красный
+                                            цвет
+                                            обусловлен тем, что земная атмосфера наиболее прозрачна для лучей
+                                            красно-оранжевой части спектра.</p>
+                                        <p>В древние времена лунное затмение считалось предзнаменованием бедствий. Люди
+                                            верили, что с его появлением могут начаться войны, эпидемии и голод. Жители
+                                            различных уголков мира интерпретировали затмения как знак гнева богов или
+                                            как начало великих перемен.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center gap-3 mb-4">
+                        <button id="calcLunarBtn" class="btn zodiac-btn">
+                            <h7>Рассчитать 3 лунных затмения</h7>
+                        </button>
+                    </div>
+
+
+                    <div id="calcBox" class="d-none">
+                        <div class="progress mb-4"
+                            style="height: 12px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                            <div id="progressBar"
+                                class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                                style="width: 0%"></div>
+                        </div>
+
+                        <div id="results" class="glass-element d-none results-container">
+                            <h3 id="resultTitle" style="font-family: 'Moonlight'; color: #38bdf8; margin-bottom: 20px;">
+                            </h3>
+                            <ul id="resultsList" class="p-0"></ul>
+                            <div class="text-center">
+                                <button class="btn-hide" onclick="hideResults()">Скрыть расчеты</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div id="doc-list-container">
             </div>
         </main>
     </div>
@@ -60,8 +308,12 @@
         </div>
         <p class="footer-text">&copy; 2025 Лунный календарь</p>
     </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/theme.js"></script>
+    <script src="../js/eclipse.js"></script>
 </body>
 
 </html>
