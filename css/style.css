@@ -943,6 +943,7 @@ body.light-theme .btn-hide:hover {
 }
 
 .dropdown-menu {
+  overflow: hidden;
   background: rgba(15, 23, 42, 0.95);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(56, 189, 248, 0.3);
@@ -1162,3 +1163,4 @@ body.light-theme .glass-element form .form-select {
     color: #000;
     border-color: #1d014b;
 }
+
